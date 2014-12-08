@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DC4DAE01-C124-498B-A3A4-508E5440C500</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StringObfuscatorSample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>188D5D7506B6A4211539113D0B6BAA59436B854B</key>
+		<string>github.com:robertvojta/RVStringObfuscator.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>sample/StringObfuscatorSample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>188D5D7506B6A4211539113D0B6BAA59436B854B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:robertvojta/RVStringObfuscator.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>188D5D7506B6A4211539113D0B6BAA59436B854B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>188D5D7506B6A4211539113D0B6BAA59436B854B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RVStringObfuscator</string>
+		</dict>
+	</array>
+</dict>
+</plist>
