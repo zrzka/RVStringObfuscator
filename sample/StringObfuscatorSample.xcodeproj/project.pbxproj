@@ -28,7 +28,7 @@
 		BF094D2E1A35F0CE00C2BA7E /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
 		BF094D321A35F2E600C2BA7E /* SOStrings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOStrings.h; sourceTree = "<group>"; };
 		BF094D351A36282F00C2BA7E /* RVStringObfuscator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RVStringObfuscator.h; path = ../../source/StringObfuscator/RVStringObfuscator.h; sourceTree = "<group>"; };
-		BF094D361A3628D700C2BA7E /* update-strings.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "update-strings.sh"; path = "scripts/update-strings.sh"; sourceTree = SOURCE_ROOT; };
+		BF094D361A3628D700C2BA7E /* obfuscate-strings.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "obfuscate-strings.sh"; path = "scripts/obfuscate-strings.sh"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 		BF094D311A35F2CA00C2BA7E /* Not included in target */ = {
 			isa = PBXGroup;
 			children = (
-				BF094D361A3628D700C2BA7E /* update-strings.sh */,
+				BF094D361A3628D700C2BA7E /* obfuscate-strings.sh */,
 				BF094D2E1A35F0CE00C2BA7E /* sample.txt */,
 			);
 			name = "Not included in target";
@@ -150,7 +150,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/scripts/update-strings.sh";
+			shellScript = "$SRCROOT/scripts/obfuscate-strings.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
