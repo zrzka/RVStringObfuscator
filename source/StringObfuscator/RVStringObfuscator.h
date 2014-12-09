@@ -86,7 +86,7 @@
     } \
     \
     for ( int i = 0 ; i < __rvso_string_length ; i++ ) { \
-      __rvso_result[i] = ( -__rvso_string[i] ) ^ __rvso_string_primer; \
+      __rvso_result[i] = __rvso_string[i] ^ __rvso_string_primer; \
       __rvso_string_primer += primer_char_increment; \
     } \
     __rvso_result[__rvso_string_length] = 0; \

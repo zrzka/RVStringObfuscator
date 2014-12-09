@@ -80,7 +80,13 @@ int main(int argc, const char * argv[]) {
       char currentPrimer = currentLinePrimer;
 
       for ( int i = 0 ; i < length ; i++ ) {
-        [output appendFormat:@"%d,", -(UTF8String[i] ^ currentPrimer)];
+        char currentValue = UTF8String[i];
+        char obfuscated = currentValue ^ currentPrimer;
+        if ( obfuscated == 0 ) {
+          fprintf( stderr, "Failed to obfuscate with current primers. Choose different ones.\n" );
+          return -1;
+        }
+        [output appendFormat:@"%d,", obfuscated];
         currentPrimer += primerCharIncrement;
       }
 
