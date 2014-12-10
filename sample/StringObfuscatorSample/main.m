@@ -22,14 +22,14 @@ int main(int argc, const char * argv[]) {
     // Get number of obfuscated strings, no need to initialize `count`, will be
     // set to `0` if there's an error
     int count;
-    RV_STRING_OBFUSCATOR_COUNT( strings, count );
+    RV_STRING_OBFUSCATOR_COUNT( strings, &count );
     fprintf( stdout, "Found %d obfuscated strings, trying to decrypt them ...\n", count );
 
     for ( int i = 0 ; i < count ; i++ ) {
       // "Decrypt" obfuscated string, no need to initialize `decrypted`, will be
       // set to `NULL` if there's an error, index out of range, ...
       char *decrypted;
-      RV_STRING_OBFUSCATOR_COPY_STRING( strings, i, decrypted, SO_STRINGS_PRIMER, SO_STRINGS_PRIMER_CHAR_INCREMENT, SO_STRINGS_PRIMER_LINE_INCREMENT );
+      RV_STRING_OBFUSCATOR_COPY_STRING_PREFIX( strings, i, &decrypted, SO_STRINGS );
 
       if ( decrypted == NULL ) {
         // You did pass `NULL` instead of `strings`, `index` is out of range
